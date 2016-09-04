@@ -64,23 +64,23 @@ public class VistaPrincipal extends AppCompatActivity {
 
                     switch (tab.getPosition()) {
                         case 0:
-                            getSupportActionBar().setTitle("Cafés");
+                            collapsingToolbarLayout.setTitle("Lugares");
                             Toast.makeText(getApplicationContext(), "Fragment 1", Toast.LENGTH_SHORT).show();
                             break;
                         case 1:
-                            getActionBar().setTitle("Restaurantes");
+                            collapsingToolbarLayout.setTitle("Productos");
                             Toast.makeText(getApplicationContext(), "Fragment 2", Toast.LENGTH_SHORT).show();
                             break;
                         case 2:
-                            toolbar.setTitle("Favoritos");
+                            collapsingToolbarLayout.setTitle("Novedades");
                             Toast.makeText(getApplicationContext(), "Fragment 3", Toast.LENGTH_SHORT).show();
                             break;
                         case 3:
-                            toolbar.setTitle("Ubicación");
+                            collapsingToolbarLayout.setTitle("Eventos");
                             Toast.makeText(getApplicationContext(), "Fragment 4", Toast.LENGTH_SHORT).show();
                             break;
                         case 4:
-                            toolbar.setTitle("Contáctanos");
+                            collapsingToolbarLayout.setTitle("Promos");
                             break;
 
                 }

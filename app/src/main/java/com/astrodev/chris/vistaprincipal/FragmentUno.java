@@ -1,8 +1,5 @@
 package com.astrodev.chris.vistaprincipal;
 
-
-
-
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -15,7 +12,6 @@ import android.widget.Toast;
 public class FragmentUno extends Fragment {
 
 
-    public Button boton;
     public FragmentUno() {
         // Required empty public constructor
     }
@@ -34,9 +30,7 @@ public class FragmentUno extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_uno, container, false);
-        // ((VistaPrincipal)getActivity()).setActionbarTitulo("Café");
-        boton = (Button)v.findViewById(R.id.boton);
-        boton.setOnClickListener(click);
+
 
 
         return v;
