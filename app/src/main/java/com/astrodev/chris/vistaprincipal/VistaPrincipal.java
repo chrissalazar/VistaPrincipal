@@ -15,7 +15,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +33,8 @@ public class VistaPrincipal extends AppCompatActivity {
             R.mipmap.ic_restaurant_white_24dp,
             R.mipmap.ic_favorite_white_24dp,
             R.mipmap.ic_location_on_white_24dp,
-            R.mipmap.ic_call_white_24dp};
+            R.mipmap.ic_call_white_24dp
+    };
 
 
     @Override
@@ -56,6 +56,7 @@ public class VistaPrincipal extends AppCompatActivity {
         iconosTabs();
 
         collapsingToolbarLayout.setTitleEnabled(true);
+        collapsingToolbarLayout.setTitle("Lugares");
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tablayout));
         tablayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -65,19 +66,19 @@ public class VistaPrincipal extends AppCompatActivity {
                     switch (tab.getPosition()) {
                         case 0:
                             collapsingToolbarLayout.setTitle("Lugares");
-                            Toast.makeText(getApplicationContext(), "Fragment 1", Toast.LENGTH_SHORT).show();
+
                             break;
                         case 1:
                             collapsingToolbarLayout.setTitle("Productos");
-                            Toast.makeText(getApplicationContext(), "Fragment 2", Toast.LENGTH_SHORT).show();
+
                             break;
                         case 2:
                             collapsingToolbarLayout.setTitle("Novedades");
-                            Toast.makeText(getApplicationContext(), "Fragment 3", Toast.LENGTH_SHORT).show();
+
                             break;
                         case 3:
                             collapsingToolbarLayout.setTitle("Eventos");
-                            Toast.makeText(getApplicationContext(), "Fragment 4", Toast.LENGTH_SHORT).show();
+
                             break;
                         case 4:
                             collapsingToolbarLayout.setTitle("Promos");

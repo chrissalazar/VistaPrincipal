@@ -6,8 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.Toast;
+
 
 public class FragmentUno extends Fragment {
 
@@ -47,11 +46,6 @@ public class FragmentUno extends Fragment {
         @Override
         public void onClick(View view) {
 
-            switch (view.getId()){
-                case R.id.boton:
-                    ((VistaPrincipal)getActivity()).setActionbarTitulo("yeah baby!");
-                    break;
-            }
         }
     };
 
